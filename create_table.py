@@ -9,6 +9,10 @@ def create_users_table():
         host="localhost"
     )
     cursor = conn.cursor()
+
+    cursor.execute("DROP TABLE IF EXISTS users;")
+    print("Existing users table dropped (if it existed).")
+    
     cursor.execute("""
     CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
