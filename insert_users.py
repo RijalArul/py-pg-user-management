@@ -8,7 +8,9 @@ def insert_users():
         {"username": "Charlie", "email": "Charlie@example.com"},
         {"username": "Dave", "email": "dave@example"},
         {"username": "Dave", "email": "daVVe@gmail.com"},
-        {"username": "Eve", "email": "eve@example.com"}
+        {"username": "Eve", "email": "eve@example.com"},
+        {"username": "Arul", "email": "arulsprout@gmail.com"},
+         {"username": "MyArul", "email": "my_Arul@gmail.com"},
     ]
 
     conn = psycopg2.connect(
